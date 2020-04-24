@@ -1,0 +1,51 @@
+.nav {
+    grid-row: 1;
+    grid-column: 1 / -1;
+    background-color: #121212;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    &__logo {
+        grid-column: 3 / 5;
+        justify-self: center;
+        align-self: center;
+        color: #ffd700;
+        font-size: 2rem;
+    }
+}
+
+.list {
+
+    grid-row: 1;
+    grid-column: 7 / 10;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+
+    &__link:link,
+    &__link:visited {
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+    }
+
+    &__link:hover,
+    &__link:active {
+        color: #ffd700;
+        box-shadow: 0 0.5em 0.5em -0.4em;
+        transform: translateY(-0.25em);
+    }
+}
+
+.dropdown {
+    display: none;
+	position: absolute; 
+}
+
+.drop:hover > ul {
+    display: inherit;
+}

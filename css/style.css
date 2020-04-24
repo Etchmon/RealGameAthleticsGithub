@@ -1,0 +1,131 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  line-height: 1.6;
+  font-weight: 300; }
+
+.container {
+  display: grid;
+  grid-template-rows: 11vh 60vh 80vh 15vh;
+  grid-template-columns: repeat(12, 1fr); }
+
+.about {
+  background-color: #121212;
+  grid-row: 3;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr); }
+  .about__portrait {
+    grid-row: 3 / 6;
+    grid-column: 9 / 11;
+    width: 100%; }
+  .about__title {
+    color: white;
+    grid-row: 1;
+    grid-column: 1 / -1;
+    background-color: black;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); }
+    .about__title span {
+      grid-column: 1 / -1;
+      grid-row: 2;
+      text-align: center;
+      color: #ffd700;
+      font-size: 4rem;
+      font-style: bold;
+      border-radius: 30%; }
+  .about__description {
+    color: white;
+    grid-row: 4 / 6;
+    grid-column: 2 / 8;
+    font-size: 2rem; }
+
+.footer {
+  background-color: #000000;
+  grid-row: 4;
+  grid-column: 1 / -1; }
+  .footer__copyright {
+    font-size: 1.4rem;
+    color: white;
+    margin-top: 6rem;
+    text-align: center; }
+
+.footer-nav {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 2rem;
+  align-items: center; }
+  .footer-nav__link:link, .footer-nav__link:visited {
+    font-size: 1.4rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5rem;
+    display: block;
+    transition: all .2s; }
+  .footer-nav__link:hover, .footer-nav__link:active {
+    color: #ffd700;
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform: translateY(-0.25em); }
+
+.header {
+  grid-row: 2;
+  grid-column: 1 / -1;
+  background-image: linear-gradient(to right bottom, rgba(18, 18, 18, 0.8), rgba(18, 18, 18, 0.8)), url(../img/jonathan-borba-zfPOelmDc-M-unsplash.jpg);
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 60vh;
+  grid-template-columns: repeat(12, 1fr); }
+  .header__slogan {
+    color: white;
+    font-size: 7rem;
+    grid-column: 3 / 8; }
+
+.nav {
+  grid-row: 1;
+  grid-column: 1 / -1;
+  background-color: #121212;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); }
+  .nav__logo {
+    grid-column: 3 / 5;
+    justify-self: center;
+    align-self: center;
+    color: #ffd700;
+    font-size: 2rem; }
+
+.list {
+  grid-row: 1;
+  grid-column: 7 / 10;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center; }
+  .list__link:link, .list__link:visited {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.4rem; }
+  .list__link:hover, .list__link:active {
+    color: #ffd700;
+    box-shadow: 0 0.5em 0.5em -0.4em;
+    transform: translateY(-0.25em); }
+
+.dropdown {
+  display: none;
+  position: absolute; }
+
+.drop:hover > ul {
+  display: inherit; }

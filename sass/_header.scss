@@ -1,0 +1,20 @@
+.header {
+    grid-row: 2;
+    grid-column: 1 / -1;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#121212, 0.8),
+        rgba(#121212, 0.8)),
+        url(../img/jonathan-borba-zfPOelmDc-M-unsplash.jpg);
+    background-size: cover;
+
+    display: grid;
+    grid-template-rows: 60vh;
+    grid-template-columns: repeat(12, 1fr);
+
+    &__slogan {
+        color: white;
+        font-size: 7rem;
+        grid-column: 3 / 8;
+    }
+}
