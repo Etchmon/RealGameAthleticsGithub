@@ -3,8 +3,8 @@
     grid-column: 1 / -1;
     background-image: linear-gradient(
         to right bottom,
-        rgba(#121212, 0.8),
-        rgba(#121212, 0.8)),
+        rgba(#1B2737, 0.8),
+        rgba(#1B2737, 0.8)),
         url(../img/jonathan-borba-zfPOelmDc-M-unsplash.jpg);
     background-size: cover;
 
@@ -16,5 +16,41 @@
         color: white;
         font-size: 7rem;
         grid-column: 3 / 8;
+        margin-top: 10rem;
+    }
+
+    &__recent {
+        color:white;
+        font-size: 1.5rem;
+        margin: 10vh 10vh;
+        grid-column: 8 / 12;
+        border-radius: 20%;
+        border: solid 5px #D4AF37;
+        background-color: #1B2737;
+
+        display: grid;
+        grid-template-rows: 10vh 5vh 5vh;
+
+        &-title {
+            text-align: center;
+            align-self: center;
+        }
+
+        &-name {
+            text-align: center;
+            align-self: center;
+        }
+
+        &-item {
+            text-align: center;
+            align-self: center;
+            list-style-type: none;
+        }
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: #D4AF37;
     }
 }

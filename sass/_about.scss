@@ -1,5 +1,5 @@
 .about {
-    background-color: #121212;
+    background-color: #1B2737;
     grid-row: 3;
     grid-column: 1 / -1;
 
@@ -17,7 +17,7 @@
         color: white;
         grid-row: 1;
         grid-column: 1 / -1;
-        background-color: black;
+        background-color: #151E29;
         display: grid;
         grid-template-rows: repeat(3, 1fr);
 
@@ -25,7 +25,7 @@
             grid-column: 1 / -1;
             grid-row: 2;
             text-align: center;
-            color: #ffd700;
+            color: #D4AF37;
             font-size: 4rem;
             font-style: bold;
             border-radius: 30%;
